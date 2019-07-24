@@ -7,7 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 
 public class NewTest {
 	
@@ -15,30 +17,26 @@ public class NewTest {
 	
   @Test
   public void openMyBlog() {
-	  driver = new ChromeDriver();
+	  
 	driver.get("https://www.softwaretestingmaterial.com/");
     driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS );
 	System.out.println("Got Softwaretestingmaterial webpage");
   }
   
-  @BeforeClass
+  @BeforeTest
   public void beforeClass() {
 	  
 	  System.setProperty("webdriver.chrome.driver", "D:\\chr\\chromedriver.exe");
 	  System.out.println("In Before class ,setted the chrome driver property");
 	 
-	  
+	  driver = new ChromeDriver();
   }
 
-  @AfterClass
+  @AfterTest
   public void afterClass() {
 	  System.out.println("In After class, quited from Web page");
 	  driver.quit();
   }
 
 }
-/*
-ssss
-sss
-sss
-*/
+
