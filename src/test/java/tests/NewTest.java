@@ -36,7 +36,7 @@ public class NewTest {
   public void afterClass() {
 	  System.out.println("In After class, quited from Web page");
 	  driver.quit();
-	  System.out.println("hai");
+	  System.out.println("hai hi");
   }
 
 }
