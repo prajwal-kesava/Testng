@@ -6,10 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
+
+import org.testng.annotations.AfterMethod;
+
 
 public class NewTest {
 	
@@ -25,7 +25,7 @@ public class NewTest {
 	System.out.println("Got Softwaretestingmaterial webpage");
   }
   
-  @BeforeTest
+  @BeforeMethod
   public void beforeClass() {
 	  
 	  System.setProperty("webdriver.chrome.driver", "D:\\chr\\chromedriver.exe");
@@ -34,9 +34,9 @@ public class NewTest {
 	  driver = new ChromeDriver();
   }
 
-  @AfterTest
+  @AfterMethod
   public void afterClass() {
-	  System.out.println("In After class, quited from Web page");
+	  System.out.println("In After method test2, quited from Web page");
 	  driver.quit();
 
   }

@@ -12,8 +12,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeTest;
-
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 
 public class Actions_T {
 	private static String name="prajwal-kesava";
@@ -43,17 +44,17 @@ public class Actions_T {
              System.out.println("Selenium Webdriver Script in chrome browser using chrome Driver | GitHub");
 	  
   }
-  @BeforeTest
+  @BeforeMethod
   public void initial()
   {
 	  System.setProperty("webdriver.chrome.driver", "D:\\chr\\chromedriver.exe");
   }
-  @AfterTest
+  @AfterMethod
   public void quit()
   {
-	  Actions action=new Actions(driver);
+	 
 	  
-	  System.out.println("In After class, quited from Web page");
+	  System.out.println("In After, quited from Web page");
 	  driver.close();
   }
 }
