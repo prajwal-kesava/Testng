@@ -17,7 +17,7 @@ import org.testng.annotations.AfterTest;
 
 public class Actions_T {
 	private static String name="prajwal-kesava";
-	private static String pass="*******";
+	private static String pass="Amrutha@2418";
 	  WebDriver driver;
 	
   @Test
