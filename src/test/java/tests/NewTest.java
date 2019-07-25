@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
 
@@ -21,8 +21,9 @@ public class NewTest {
   public void openMyBlog() {
 	  
 	driver.get("https://www.softwaretestingmaterial.com/");
-    driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS );
-	System.out.println("Got Softwaretestingmaterial webpage");
+    //driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS );
+	System.out.println(driver.getTitle());
+	   Assert.assertNotEquals("The world’s leading software development platform · ",driver.getTitle());
   }
   
   @BeforeMethod

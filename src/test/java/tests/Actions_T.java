@@ -53,7 +53,7 @@ public class Actions_T {
   public void quit()
   {
 	 
-	  
+	     driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS );
 	  System.out.println("In After, quited from Web page");
 	  driver.close();
   }
