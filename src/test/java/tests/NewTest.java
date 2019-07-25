@@ -36,7 +36,7 @@ public class NewTest {
 
   @AfterMethod
   public void afterClass() {
-	  System.out.println("In After method test2, quited from Web page");
+	  System.out.println("In After method test, quited from Web page");
 	  driver.quit();
 
   }
