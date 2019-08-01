@@ -1,22 +1,10 @@
-pipeline{
-agent any
-stages{
- 	
- 	stage('Testing stage'){
- 		steps{
- 			withMaven(maven:'maven')
- 			{
- 			sh 'mvn test'
- 			}
-		 }
- 	}
- 	stage('INSTALLING stage'){
- 		steps{
- 			withMaven(maven:'maven')
- 			{
-	 			sh 'mvn install'
-	 		}
- 	  	}
- 	  }
- 	}
+
+node{
+	stage('SCM checkout'){
+		git 'https://github.com/prajwal-kesava/Testng'
+	}
+	stage('install'){
+		sh 'mvn clean install'
+	}
 }
+		
