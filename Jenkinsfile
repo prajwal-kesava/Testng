@@ -3,7 +3,7 @@ agent any
 stages{
  	stage('Compile stage'){
  		steps{
-   			withMaven(maven:'Apache Maven 3.6.1')
+   			withMaven(maven:'maven_3_6_1')
    			{
    				sh 'mvn clean compile'
    			}
@@ -11,7 +11,7 @@ stages{
  	}
  	stage('Testing stage'){
  		steps{
- 			withMaven(maven:'Apache Maven 3.6.1')
+ 			withMaven(maven:'maven_3_6_1')
  			{
  			sh 'mvn test'
  			}
@@ -19,7 +19,7 @@ stages{
  	}
  	stage('INSTALLING stage'){
  		steps{
- 			withMaven(maven:'Apache Maven 3.6.1')
+ 			withMaven(maven:'maven_3_6_1')
  			{
 	 			sh 'mvn install'
 	 		}
