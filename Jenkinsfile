@@ -1,11 +1,20 @@
-
-node{
-	stage('SCM checkout'){
-		git 'https://github.com/prajwal-kesava/Testng'
-	}
-	stage('install'){
-		def mvnHome = tool name: 'maven', type: 'maven'
-		sh "{mvnHome}/bin/mvn install"
-	}
+pipeline{
+    agent any
+        stages{
+            stage('clean'){
+                steps{
+                sh 'mvn clean'
+            }
+            }
+            stage('test'){
+                steps{
+                sh 'mvn test'
+            }
+            }
+            stage('build'){
+                steps{
+                sh 'mvn build'
+            }
+            }
+        }
 }
-		
