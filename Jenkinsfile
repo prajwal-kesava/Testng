@@ -4,7 +4,7 @@ stages{
  	
  	stage('Testing stage'){
  		steps{
- 			withMaven(maven:'maven',jdk:'java 1.8.0_201 ')
+ 			withMaven(maven:'maven')
  			{
  			sh 'mvn test'
  			}
@@ -12,7 +12,7 @@ stages{
  	}
  	stage('INSTALLING stage'){
  		steps{
- 			withMaven(maven:'maven',jdk:'java 1.8.0_201 ')
+ 			withMaven(maven:'maven')
  			{
 	 			sh 'mvn install'
 	 		}
