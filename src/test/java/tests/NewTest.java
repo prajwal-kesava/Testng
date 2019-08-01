@@ -20,7 +20,7 @@ public class NewTest {
   @Test
   public void openMyBlog() {
 	  
-	driver.get("https://www.softwaretestingmaterial.com/");
+	driver.get("https://www.facebook.com/");
     //driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS );
 	System.out.println(driver.getTitle());
 	   Assert.assertNotEquals("The world’s leading software development platform · ",driver.getTitle());
@@ -38,6 +38,7 @@ public class NewTest {
   @AfterMethod
   public void afterClass() {
 	  System.out.println("In After method test, quited from Web page");
+	  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS );
 	  driver.quit();
 
   }

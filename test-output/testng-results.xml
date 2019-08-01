@@ -2,38 +2,38 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26901" started-at="2019-07-25T08:19:41Z" finished-at="2019-07-25T08:20:08Z">
+  <suite name="Suite" duration-ms="15017" started-at="2019-08-01T08:31:38Z" finished-at="2019-08-01T08:31:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26901" started-at="2019-07-25T08:19:41Z" finished-at="2019-07-25T08:20:08Z">
+    <test name="Test" duration-ms="15017" started-at="2019-08-01T08:31:38Z" finished-at="2019-08-01T08:31:53Z">
       <class name="tests.NewTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.NewTest@2ff4f00f]" name="beforeClass" is-config="true" duration-ms="6884" started-at="2019-07-25T13:49:54Z" finished-at="2019-07-25T13:50:01Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.NewTest@47f37ef1]" name="beforeClass" is-config="true" duration-ms="7641" started-at="2019-08-01T14:01:38Z" finished-at="2019-08-01T14:01:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="openMyBlog()[pri:0, instance:tests.NewTest@2ff4f00f]" name="openMyBlog" duration-ms="6244" started-at="2019-07-25T13:50:01Z" finished-at="2019-07-25T13:50:07Z">
+        <test-method status="PASS" signature="openMyBlog()[pri:0, instance:tests.NewTest@47f37ef1]" name="openMyBlog" duration-ms="4873" started-at="2019-08-01T14:01:46Z" finished-at="2019-08-01T14:01:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openMyBlog -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.NewTest@2ff4f00f]" name="afterClass" is-config="true" duration-ms="911" started-at="2019-07-25T13:50:07Z" finished-at="2019-07-25T13:50:08Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.NewTest@47f37ef1]" name="afterClass" is-config="true" duration-ms="1002" started-at="2019-08-01T14:01:51Z" finished-at="2019-08-01T14:01:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- tests.NewTest -->
       <class name="tests.Actions_T">
-        <test-method status="PASS" signature="initial()[pri:0, instance:tests.Actions_T@47f37ef1]" name="initial" is-config="true" duration-ms="7" started-at="2019-07-25T13:49:41Z" finished-at="2019-07-25T13:49:41Z">
+        <test-method status="PASS" signature="initial()[pri:0, instance:tests.Actions_T@2ff4f00f]" name="initial" is-config="true" duration-ms="7" started-at="2019-08-01T14:01:38Z" finished-at="2019-08-01T14:01:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initial -->
-        <test-method status="PASS" signature="f()[pri:0, instance:tests.Actions_T@47f37ef1]" name="f" duration-ms="12762" started-at="2019-07-25T13:49:41Z" finished-at="2019-07-25T13:49:54Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:tests.Actions_T@2ff4f00f]" name="f" duration-ms="14921" started-at="2019-08-01T14:01:38Z" finished-at="2019-08-01T14:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:tests.Actions_T@47f37ef1]" name="quit" is-config="true" duration-ms="77" started-at="2019-07-25T13:49:54Z" finished-at="2019-07-25T13:49:54Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:tests.Actions_T@2ff4f00f]" name="quit" is-config="true" duration-ms="71" started-at="2019-08-01T14:01:53Z" finished-at="2019-08-01T14:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- tests.Actions_T -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
