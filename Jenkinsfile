@@ -1,29 +1,27 @@
 pipeline{
 agent any
+
+tools {
+        maven 'Maven 3.6.1'
+        jdk 'jdk1.8.0_201'
+    }
 stages{
  	stage('Compile stage'){
  		steps{
-   			withMaven(maven:'maven_3_6_1')
-   			{
+   			
+   			
    				sh 'mvn clean compile'
-   			}
+   			
  		}
  	}
  	stage('Testing stage'){
  		steps{
- 			withMaven(maven:'maven_3_6_1')
- 			{
+ 			
+ 			
  			sh 'mvn test'
- 			}
+ 			
 		 }
  	}
- 	stage('INSTALLING stage'){
- 		steps{
- 			withMaven(maven:'maven_3_6_1')
- 			{
-	 			sh 'mvn install'
-	 		}
- 	  	}
- 	  }
+ 	
  	}
 }
