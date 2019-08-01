@@ -17,11 +17,11 @@ stages{
  			}
 		 }
  	}
- 	stage('Building stage'){
+ 	stage('INSTALLING stage'){
  		steps{
  			withMaven(maven:'Apache Maven 3.6.1')
  			{
-	 			sh 'mvn build'
+	 			sh 'mvn install'
 	 		}
  	  	}
  	  }
