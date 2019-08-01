@@ -1,20 +1,26 @@
 pipeline{
-    agent any
+    agent {
+        label "windows"
+    }
+    tools{
+        maven 'maven'
+        jdk 'java 1.8.0_201'
+    }
         stages{
-            stage('clean'){
+            stage('Initialize'){
                 steps{
-                sh 'mvn clean'
+                bat '''
+                    echo "PATH=%PATH%"
+                    echo "M2_HOME=%M2_HOME%"
+                    '''
             }
-            }
-            stage('test'){
+        }
+            stage('Build'){ 
                 steps{
-                sh 'mvn test'
+                        bat 'mvn install'
             }
+
             }
-            stage('build'){
-                steps{
-                sh 'mvn build'
-            }
-            }
+           
         }
 }
